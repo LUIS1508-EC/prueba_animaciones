@@ -121,9 +121,12 @@ h1{
 .cards img {
     width: 200px;
     height: 280px;
-    transition: 0.5s;
     object-fit: cover;
 }
+.cards img:hover {
+    transition: all 1s;
+    transform: scale(1.1);
+    }
 
 .botones {
     display: flex;
@@ -155,10 +158,7 @@ footer img {
 }
 
    
-    .cards img:hover {
-    transition: all 1s;
-    transform: scale(1.1);
-    }
+
 
 
 
