@@ -118,9 +118,11 @@ h1{
     grid-area: galeria;
 }
 
-.galeria img {
+.cards img {
     width: 200px;
     height: 280px;
+    transition: 0.5s;
+    object-fit: cover;
 }
 
 .botones {
@@ -151,6 +153,12 @@ footer img {
     width: 30px;
     padding: 5px;
 }
+
+   
+    .cards img:hover {
+    transition: all 1s;
+    transform: scale(1.1);
+    }
 
 
 
