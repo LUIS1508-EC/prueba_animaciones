@@ -5,7 +5,12 @@
 
 body {
     font-family: 'Hind', sans-serif;
-    background-color: yellow;
+    background-color: black;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 24px;
 }
 
 .container {
@@ -13,22 +18,21 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px 80px 1fr 60px;
+    grid-template-rows: 60px 80px 1fr 40px 60px;
     grid-template-areas:    "navegador"
                             "selector"
                             "galeria"
+                            "ultimo"
                             "footer";
 
 }
 
 .logo {
     width: 50px;
-    fill: yellow;
 }
 
 .menu {
     width: 30px;
-    fill: yellow;
 }
 
 .logo3 {
@@ -62,11 +66,6 @@ body {
     grid-area: selector;
 }
 
-.filtros select {
-    width: 250px;
-    height: 50px;
-}
-
 .encabezado ul {
     display: none;
 }
@@ -84,12 +83,13 @@ body {
     align-items: center;
     gap: 10px;
     padding: 10px;
+    background-color:red;
 }
 
 .container_cards button {
-    background-color: black;
-    border: solid 1px yellow;
-    color: yellow;
+    background-color: red;
+    border: solid 1px black;
+    color: black;
     width: 100px;
     height: 50px;
 }
@@ -98,13 +98,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
-    color: yellow;
+    background-image: url(../images/fondo3.jpg);
     width: 250px;
     padding: 25px 0;
     gap: 20px;
     border-radius: 5px;
     border: solid 3px black;
+}
+
+.container_cards h3{
+    color: aliceblue;
 }
 
 
@@ -117,24 +120,26 @@ body {
 
 .galeria img {
     width: 200px;
+    height: 280px;
 }
 
 .botones {
     display: flex;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .botones button {
     width: 30px;
     height: 30px;
-    color: yellow;
+    color: red;
     background-color: black;
-    border: solid 1px yellow;
+    border: solid 1px red;
 }
 
 footer {
     background-color: black;
-    color: yellow;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,17 +148,19 @@ footer {
 }
 
 footer img {
-    width: 20px;
+    width: 30px;
+    padding: 5px;
 }
 
-.foot2 {
-    display: none;
-}
 
 
 @media (min-width: 576px) {
     body {
         background-color: black;
+    }
+    h1{
+        text-align: center;
+        font-size: 32px;
     }
 
     .container {
@@ -169,8 +176,8 @@ footer img {
     .encabezado {
         flex-direction: column;
         justify-content: start;
-        color: black;
-        background-color: yellow;
+        color:whitesmoke;
+        background-color: black;
 
     }
 
@@ -215,13 +222,13 @@ footer img {
     .botones button {
         width: 30px;
         height: 30px;
-        color: black;
-        background-color: yellow;
-        border: solid 1px black;
+        color:red;
+        background-color:black;
+        border: solid 1px red;
     }
 
     .cards {
-        background-color: yellow;
+        background-color: white;
         color: black;
     }
 
@@ -231,8 +238,8 @@ footer img {
 
     footer {
         display: flex;
-        background-color: yellow;
-        color: black;
+        background-color: black;
+        color: white;
         align-items: center;
         justify-content: center;
 
@@ -246,13 +253,6 @@ footer img {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .foot2 {
-
-        display: flex;
-        width: 30px;
-
     }
 
     .logo3 {
