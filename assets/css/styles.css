@@ -7,7 +7,8 @@ body {
     font-family: 'Hind', sans-serif;
     background-color: black;
 }
-h1{
+
+h1 {
     color: aliceblue;
     text-align: center;
     font-size: 24px;
@@ -19,11 +20,11 @@ h1{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 80px 1fr 40px 60px;
-    grid-template-areas:    "navegador"
-                            "selector"
-                            "galeria"
-                            "ultimo"
-                            "footer";
+    grid-template-areas: "navegador"
+        "selector"
+        "galeria"
+        "ultimo"
+        "footer";
 
 }
 
@@ -55,16 +56,6 @@ h1{
     align-items: center;
 }
 
-.filtros {
-
-    background-color: darkgray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    grid-area: selector;
-}
 
 .encabezado ul {
     display: none;
@@ -83,7 +74,7 @@ h1{
     align-items: center;
     gap: 10px;
     padding: 10px;
-    background-color:red;
+    background-color: red;
 }
 
 .container_cards button {
@@ -106,7 +97,7 @@ h1{
     border: solid 3px black;
 }
 
-.container_cards h3{
+.container_cards h3 {
     color: aliceblue;
 }
 
@@ -123,10 +114,11 @@ h1{
     height: 280px;
     object-fit: cover;
 }
+
 .cards img:hover {
     transition: all 1s;
     transform: scale(1.1);
-    }
+}
 
 .botones {
     display: flex;
@@ -157,7 +149,7 @@ footer img {
     padding: 5px;
 }
 
-   
+
 
 
 
@@ -166,7 +158,8 @@ footer img {
     body {
         background-color: black;
     }
-    h1{
+
+    h1 {
         text-align: center;
         font-size: 32px;
     }
@@ -176,15 +169,15 @@ footer img {
         display: grid;
         grid-template-columns: 250px 1fr;
         grid-template-rows: 80px 1fr 100px;
-        grid-template-areas:    "navegador selector"
-                                "navegador galeria"
-                                "footer galeria";
+        grid-template-areas: "navegador selector"
+            "navegador galeria"
+            "footer galeria";
     }
 
     .encabezado {
         flex-direction: column;
         justify-content: start;
-        color:whitesmoke;
+        color: whitesmoke;
         background-color: black;
 
     }
@@ -230,8 +223,8 @@ footer img {
     .botones button {
         width: 30px;
         height: 30px;
-        color:red;
-        background-color:black;
+        color: red;
+        background-color: black;
         border: solid 1px red;
     }
 
@@ -267,17 +260,6 @@ footer img {
         width: 60px;
         display: block;
 
-    }
-
-
-    .filtros {
-        background-color: black;
-        color: yellow;
-    }
-
-    .filtros span {
-        padding-top: 10px;
-        padding-bottom: 10px;
     }
 
 }
